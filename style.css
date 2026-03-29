@@ -1,0 +1,86 @@
+/* -------------------------
+   Construction Style Fonts
+   ------------------------- */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap');
+
+/* Base site font */
+body, p, li, span, div {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #333; /* can adjust for darker/light contrast */
+}
+
+/* Headings: bold, industrial */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* construction signage style */
+    color: #222;
+}
+
+/* Navigation and menu items */
+nav a, .menu a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff; /* change to match your banner or button colors */
+}
+
+/* Buttons */
+button, .btn {
+    font-family: 'Anton', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: #d35400; /* orange-ish construction color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #e67e22; /* slightly lighter on hover */
+}
+
+/* Banner / Hero Text */
+.banner h1, .hero-text {
+    font-family: 'Anton', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Optional: small details for subheadings */
+.subheading {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #555;
+}
+/* Banner / Company Name Styling */
+.banner .company-name {
+    font-family: 'Anton', sans-serif; /* bold, industrial font */
+    font-size: 5rem; /* much bigger title */
+    font-weight: 700;
+    color: #f9d342; /* bright construction yellow */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    text-shadow: none; /* remove all shadows */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .banner .company-name {
+        font-size: 3rem; /* responsive scaling */
+    }
+}
